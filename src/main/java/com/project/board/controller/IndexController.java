@@ -7,8 +7,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class IndexController {
 
     @RequestMapping("/")
-    public String dashboard() {
+    public String index() {
         return "index";
     }
+
+    @RequestMapping("/login")
+    public String login(){ return "login";}
+
+    @RequestMapping("/signup")
+    public String signUp(){ return "register";}
+
 
 }
